@@ -75,7 +75,7 @@ nav li a:hover {
     color: white;
 }
 
-#ctn a {
+#ctn .taget{
     position: absolute;
     top: -60px;
 }
@@ -212,3 +212,40 @@ table b {
     transition: .3s ease;
     margin-top:-50px;
 }
+
+.info{
+    position: absolute;
+    margin-top:15%;
+    width:40%;
+}
+.info a{
+    text-decoration: none;
+    margin-top:15%;
+}
+.video{
+    position:absolute;
+    right:0;
+}
+
+.table-ach{
+    padding:20% 20%;
+    padding-top: 15%;
+    width:100%
+}
+.table-ach tr th{
+    background: #111;
+    width:30%;
+}
+.table-ach  th, td {
+    background: black;
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+ footer{
+     position: fixed;
+     bottom:0;
+     color:white;
+ }
+ footer a{
+     color:white;
+ }
