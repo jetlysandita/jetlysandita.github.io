@@ -17,7 +17,7 @@ function main(){
         dino1do()
         //dino2
         dino2do()
-    }, 100);
+    }, 150);
 }
     
     
