@@ -17,14 +17,13 @@ let pointer = 'crosshair'
 //default temp
 let temp = ''
 //always run for interval millisecond
-document.addEventListener('DOMContentLoaded', (event) => {
-//the event occurred
+function main(){
     setInterval(() => {
         //dino 1
         dino1do()
         //dino2
         dino2do()
     }, 100);
-})
+}
     
     
