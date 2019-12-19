@@ -10,14 +10,22 @@ let number = (current[current.length-1]).split('.')
 let pointer = 'crosshair'
 //default temp
 let temp = ''
+let tid
+let dinoplay = false
 //always run for interval millisecond
-function main(){
-    setInterval(() => {
-        //dino 1
-        dino1do()
-        //dino2
-        dino2do()
-    }, 150);
+function play(){
+    if(dinoplay){
+        dinoplay = false
+        clearInterval(tid)
+    }else{
+        tid = setInterval(() => {
+            //dino 1
+            dino1do()
+            //dino2
+            dino2do()
+        }, 100);
+        dinoplay = true
+    }
 }
     
     
