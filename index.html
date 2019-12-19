@@ -16,28 +16,26 @@
             </tr>
             <tr>
                 <td>
-                    <img id='dino'  alt="idle" height="150" onclick="dead()" onmouseover="change_cursor()">
+                    <img id='dino'  alt="idle" height="300" onclick="dead()" onmouseover="change_cursor()">
                 </td>
             </tr>
             <tr>
                 <td>
-                    You can click this dino <br>
+                    You can click dino to kill or revive it<br>
                     You can press W : walk, R : run, and Space : jump  
                 </td>
             </tr>
         </table>
-        <div>
-            <h4>
-                GIF image ??? <br>
-                No ! , So Why can move???<br>
-                Please find out...
-            </h4>
-        </div>
-        <button onclick="play()" >play/pause</button>
     </div>
 </body>
 </html>
-<script src="main.js"></script>
+<script >
+    //dino
+    let content = document.getElementById('dino')
+    //set default
+    content.src = 'idle/'+'idle.gif'
+    //default pointer
+    let pointer = 'crosshair'
+</script>
 <script src="change.js"></script>
-<script src="dino1.js"></script>
-<script src="dino2.js"></script>
+<script src="dino.js"></script>
