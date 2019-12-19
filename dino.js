@@ -1,6 +1,6 @@
 //kill or revive
 function dead() {
-  content.alt = content.alt === 'idle' ? 'dead' : 'idle'
+  content.alt = content.alt === 'dead' ? 'idle' : 'dead'
   content.src = content.alt + '/' + content.alt + '.gif'
   pointer = pointer === 'crosshair' ? 'help' : 'crosshair'
   content.style.cursor = pointer
