@@ -27,6 +27,7 @@ body {
   height: 70%;
   background-color: grey;
   border: 1px solid black;
+  overflow: auto;
 }
 .history table{
   margin: 5px;
