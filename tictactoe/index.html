@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="check(),history()">
+    <div class='sidebar center'>
+        <div class="login" id='login'>
+            <input class='username' id='username' type="text" value="" placeholder="Username">
+            <button onclick="add()">
+                Enter
+            </button>
+        </div>
+        <div class='history'>
+            <table id='history'>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class='content'>
+        <div class='title'>
+            Tic Tac Toe
+        </div>
+        <div class="main">
+            <table>
+                <tr>
+                    <td id='00' onclick="go(this.id)">
+
+                    </td>
+                    <td id='01' onclick="go(this.id)">
+
+                    </td>
+                    <td id='02' onclick="go(this.id)">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td id='10' onclick="go(this.id)">
+
+                    </td>
+                    <td id='11' onclick="go(this.id)">
+
+                    </td>
+                    <td id='12' onclick="go(this.id)">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td id='20' onclick="go(this.id)">
+
+                    </td>
+                    <td id='21' onclick="go(this.id)">
+
+                    </td>
+                    <td id='22' onclick="go(this.id)">
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+<script src='username.js'></script>
+<script src='random.js'></script>
+<script src='history.js'></script>
+<script src='tictactoe.js'></script>
+<script src='player.js'></script>
+<script>
+    change()
+    let board = [['','',''],['','',''],['','','']]
+    let turn = 0
+</script>
